@@ -11,4 +11,5 @@ import java.util.List;
 public interface MealRepository extends JpaRepository<Meal, Long> {
     // 특정 사용자 + 날짜 + 끼니에 해당하는 식단 기록 조회
     List<Meal> findByUserAndDateAndMealType(User user, LocalDate date, MealType mealType);
+    List<Meal> findByUserAndDate(User user, LocalDate date);
 }
