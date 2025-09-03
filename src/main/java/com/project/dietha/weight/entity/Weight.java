@@ -27,4 +27,6 @@ public class Weight {
 
     @Column(nullable = false)
     private Double weight; // 체중 값
+
+
 }
